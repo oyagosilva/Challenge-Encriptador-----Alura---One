@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Decodificador de textos | Oracle + Alura</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="principal">
+      <header>
+        <a href="/">
+          <img
+            class="logo"
+            src="./assets//images/logo_alura.png"
+            alt="Logotipo letra a de Alura"
+          />
+        </a>
+      </header>
+      <main>
+        <textarea type="text" placeholder="Digite seu texto"></textarea>
+        <p class="info">
+          <img src="./assets/icons/info.png" />
+          Apenas letras minúsculas e sem acento.
+        </p>
+        <div class="acoes">
+          <button
+            type="button"
+            onclick="criptografar()"
+            class="button desabilitado"
+            id="botaoCripto"
+            disabled
+          >
+            Criptografar
+          </button>
+          <button
+            onclick="descriptografar()"
+            type="button"
+            class="button desabilitado"
+            id="botaoDescripto"
+            disabled
+          >
+            Descriptografar
+          </button>
+        </div>
+      </main>
+    </div>
+    <aside>
+      <img
+        src="./assets/images/image.svg"
+        alt="Figura de pessoa olhando através de uma lupa."
+      />
+      <h2>Nenhuma mensagem encontrada</h2>
+      <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+      <span id="resultado">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, a
+        aperiam quas hic tempore, odio, voluptatem amet porro deleniti cum
+        nulla! Doloremque, maiores iste? Dolores sed unde cum nihil dolore.
+      </span>
+
+      <footer>
+        <button
+          id="copiar"
+          onclick="copiar()"
+          type="button"
+          class="button copiar"
+        >
+          Copiar
+        </button>
+      </footer>
+    </aside>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
