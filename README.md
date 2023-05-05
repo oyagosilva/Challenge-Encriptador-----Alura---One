@@ -1,4 +1,3 @@
-#challengeonedecodificador5
 
 Decodificador de Texto - Oracle Next Education
 
