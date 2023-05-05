@@ -1,0 +1,218 @@
+:root{
+    --dark-blue-100: #609ED4;
+    --dark-blue-200: #356EA9;
+    --dark-blue-300: #0A3871;
+    --dark-blue-400: #072B61;
+    --dark-blue-500: #052051;
+  
+    --light-blue-100: #F3F5FC;
+    --light-blue-200: #EFF1FA;
+    --light-blue-300: #E9ECF8;
+    --light-blue-400: #AAB2D5;
+    --light-blue-500: #757FB2;
+  
+    --gray-100: ##CED4DA;
+    --gray-200: #ADB5BD;
+    --gray-300: #868E96;
+    --gray-400: #495057;
+    --gray-500: #343A40;
+  
+    --white: #FFFFFF;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    width: 100vw;
+    height: 100vh;
+    background: var(--light-blue-100);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  li{
+    list-style: none;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  .principal{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header{
+    margin-bottom: 80px;
+  }
+  
+  .logo{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  main{
+    padding-left: 10rem;
+    padding-right: 5rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+  
+  main textarea{
+    width: 680px;
+    height: 18.75rem;
+    padding: 1rem;
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 150%;
+    background: transparent;
+    color: var(--dark-blue-300);
+    border: none;
+    outline: none;
+    resize: none;
+    text-transform: lowercase;
+  }
+  
+  main textarea::placeholder{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--dark-blue-300);
+  }
+  
+  .info{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
+    font-size: .75rem;
+    padding: 1rem 0;
+  }
+  
+  .info img{
+    width: 16px;
+    height: 16px;
+  }
+  
+  .acoes{
+    display: flex;
+    gap: 24px;
+  }
+  
+  aside{
+    max-width: 400px;
+    height: auto;
+    background: var(--white);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 10px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  }
+  
+  aside img{
+    width: 336px;
+    height: 304px;
+    padding: 0 2rem;
+    display: none;
+  }
+  
+  aside h2{
+    font-weight: 700;
+    color: var(--gray-500);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 120%;
+    padding: 0 2rem;
+    display: none;
+  }
+  
+  aside p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+    color: var(--gray-400);
+    padding: 0 2rem;
+    display: none;
+  }
+  
+  #copiar{
+    margin-bottom: 2rem;
+  }
+  
+  #resultado{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--gray-400);
+    padding: 0 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .button{
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 400;
+    text-align: center;
+    padding: 24px;
+    width: 328px;
+    height: 68px;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .desabilitado{
+    background: var(--light-blue-300);
+    color: var(--gray-500);
+    cursor: not-allowed;
+  }
+  
+  .criptografar{
+    background: var(--dark-blue-400);
+    color: var(--white);
+  }
+  
+  .criptografar:hover{
+    background: var(--dark-blue-300);
+  }
+  
+  .descriptografar{
+    background: #D8DFE8;
+    color: var(--dark-blue-300);
+    border: 1px solid var(--dark-blue-200);
+    transition: all 2s;
+  }
+  
+  .descriptografar:hover{
+    background: var(--white);
+    border: 1px solid var(--dark-blue-300);
+    transition: all ease .5s;
+  }
+  
+  .copiar{
+    background: var(--white);
+    color: var(--dark-blue-300);
+    border: 1px solid var(--dark-blue-300);
+    margin: 0 14px;
+  }
+  
+  .copiar:hover{
+    background: #D8DFE8;
+    border: 1px solid var(--dark-blue-300);
+    transition: all ease .5s;
+  }
